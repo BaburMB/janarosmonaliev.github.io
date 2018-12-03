@@ -22,4 +22,5 @@ The whole website is functional, all links work. It now contains 5 pages with de
 - Photo slider was added to Team section (team.html)
 - Footer was updated
 - Contact section is now enabled with Google Forms
+- Icon is now a link for Main Page
 }
