@@ -17,3 +17,9 @@ The whole website is functional, all links work. It now contains 5 pages with de
 - Chronological timeline was added;
 - Wide use of lists and tables can be seen in the code;
 }
+
+@HW4{
+- Photo slider was added to Team section (team.html)
+- Footer was updated
+- Contact section is now enabled with Google Forms
+}
