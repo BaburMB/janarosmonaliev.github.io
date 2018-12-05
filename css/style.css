@@ -23,6 +23,12 @@ body {
     margin-right: 10px;
 }
 
+@media (max-width: 768px) {
+.navbar-collapse {
+    background: rgb(0,0,0, 0.8);
+    }
+    
+}
 body {
     background-color: white;
     -webkit-background-size: cover;
