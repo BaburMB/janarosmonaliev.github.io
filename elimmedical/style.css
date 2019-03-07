@@ -1,8 +1,28 @@
-.navbar-nav{
+/*CSS for Main Page*/
+html,body,h1,h2,h3,h4,h5{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+}
+.header-main {
+    background: url(images/header-main.jpg) no-repeat, center, center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height:  height: 100%;
 }
 
-.nav.navbar-nav li a{
- color: #82c31b; !important;
+.text-bold{
+    font-weight: 700;
+}
+.text-semibold{
+    font-weight: 600;
+}
+.text-regular{
+    font-weight: 500;
+}
+.text-light{
+    font-weight: 400;
+}
+.color-green{
+    color: #82c31b; !important;
 }
