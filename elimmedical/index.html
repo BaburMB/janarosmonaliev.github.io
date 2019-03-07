@@ -14,11 +14,15 @@
 
     <!-- Customization -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    
+    <!--Font Awesome CDN Pack-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-expand-md navbar-light bg-light px-lg-5">
+<!--   NAVIGATION BAR <-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="images/elim_medical_logo.png" height="50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +30,16 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav text-bold">
-                <li class="nav-item active px-lg-3 text-center">
+            <ul class="navbar-nav text-bold mx-lg-55">
+                <li class="nav-item active px-lg-3 px-md-1 text-center">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
 
-                <li class="nav-item px-lg-3 text-center">
+                <li class="nav-item px-lg-3 px-md-1 text-center">
                     <a class="nav-link" href="#">About</a>
                 </li>
 
-                <li class="nav-item dropdown px-lg-3 text-center">
+                <li class="nav-item dropdown px-lg-3 px-md-1 text-center">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Clinics
                     </a>
@@ -47,7 +51,7 @@
                     </div>
                 </li>
 
-                <li class="nav-item dropdown px-lg-3 text-center">
+                <li class="nav-item dropdown px-lg-3 px-md-1 text-center">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         South Korea
                     </a>
@@ -57,22 +61,24 @@
                     </div>
                 </li>
 
-                <li class="nav-item px-lg-4 mx-md-1">
+                <li class="nav-item px-lg-5 mx-md-2">
 
                 </li>
 
-                <li class="nav-item px-lg-3 text-center">
+                <li class="nav-item px-lg-3 text-center ">
                     <!--        <a class="nav-link" href="#">Contact</a>-->
-                    <button type="button" class="btn btn-success btn-block">Contact</button>
+                    <button type="button" class="btn btn-block btn-light text-semibold text-white px-3" style="background-color: #82c31b">Contact</button>
                 </li>
             </ul>
         </div>
     </nav>
-
-    <header class="masthead bg-light header-main">
-        <div class="container">
+<!--   NAVIGATION BAR END <-->
+   
+<!--   HEADER PAGE-->
+    <header class="masthead bg-light header-main pt-5 mt-4">
+           <div class="container">
             <div class="row align-items-center justify-content-end">
-                <div class="col-md-7 col-sm-12 col-lg-6 text-center justify-content-center text-bold px-0 py-5">
+                <div class="col-md-7 col-sm-12 col-lg-6 text-center text-bold text-dark py-5">
                     <h4>
                         <strong>Medical treatment in South Korea, country of limitless potential with progressive hospitals and innovative procedures.</strong>
                     </h4>
@@ -83,22 +89,53 @@
                     </h4>
                     
                     <form class="mt-5">
-                        <div class="form-group mx-5 my-4">
+                        <div class="form-group mx-md-5 my-4">
                             <!-- <label for="exampleFormControlTextarea1">Example textarea</label>-->
                             <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="1" placeholder="Name"></textarea>
                         </div>
-                        <div class="form-group mx-5 my-4">
+                        <div class="form-group mx-md-5 my-4">
                             <!-- <label for="exampleFormControlInput1">Email address</label>-->
                             <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="E-mail">
                         </div>
-                        <div class="form-group mx-5 my-4">
-                        <input class="btn btn-success btn-block btn-lg text-semibold" type="submit" value="SEND">
+                        <div class="form-group mx-md-5 my-4">
+                        <input class="btn btn-secondary color-green btn-block btn-lg text-semibold" type="submit" value="SEND">
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
+           </div>
     </header>
+<!--  HEADER PAGE-->
+
+<!--  DESCRIPTION PAGE-->
+   <div class="container-fluid justify-content-center text-center bg-dark">
+       <div class="row justify-content-center">
+          <div class="col-lg-8 col-sm-12 py-5">
+              <h4 class="text-semibold text-white pb-3">
+                  <span class="text-green">Elim Medical</span> - your trusted partner in <span class="text-green">South Korea</span>
+              </h4>
+              <hr>
+              <h5 class="text-white">
+                  At Elim Medical, we always strive for complete customer satisfaction. Our comprehensive approach has taken every aspect of your treatment into consideration, which enables us to seamlessly link your needs and requests to our vast network of treatment centers, clinics and specialists.
+              </h5>
+          </div>
+       </div>
+       <div class="row justify-content-center">
+           <div class="col-lg-4 pb-4">
+               <span class="fas fa-clipboard-list text-green pb-4" style="font-size:6em"></span>
+               <p class="text-white text-light px-5">We provide detailed information about medical institutions, as well as your personal treatment plan, different diagnostic options, schedules and prices.</p>
+           </div>
+           <div class="col-lg-4 pb-4">
+               <span class="fas fa-user-md text-green pb-4" style="font-size:6em"></span>
+               <p class="text-white text-light px-5">Once the request is approved, we contact with medical institution for registration. Also, we provide help with medical documents, VISA and accomondation.</p>
+           </div>
+           <div class="col-lg-4 pb-4">
+               <span class="fas fa-procedures text-green pb-4" style="font-size:6em"></span>
+               <p class="text-white text-light px-5">We provide comprehensive assistance during and after your visit in South Korea.</p>
+           </div>
+        </div>
+   </div>
+<!--  DESCRIPTION PAGE-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
