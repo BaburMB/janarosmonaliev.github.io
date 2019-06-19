@@ -1,216 +1,267 @@
-<!doctype html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="ru">
 
 <head>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
 
     <!-- SEO Optimization -->
-    <title>Elim Medical | Medical Treatment in South Korea.</title>
+    <title> Elim Medical | Лечение в Южной Корее</title>
+
+    <!-- Animation js and css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Customization -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-    
+
     <!--Font Awesome CDN Pack-->
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-<!--   NAVIGATION BAR <-->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-0">
+    <!--   NAVIGATION BAR <-->
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-0" data-aos="fade-down">
         <a class="navbar-brand" href="#">
             <img src="images/logo_black.png" height="50px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav text-bold mx-lg-55">
                 <li class="nav-item active px-lg-3 px-md-1 text-center">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item px-lg-3 px-md-1 text-center">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">О нас</a>
                 </li>
 
+                <!-- Hospitals Tab -->
                 <li class="nav-item dropdown px-lg-3 px-md-1 text-center">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Clinics
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Клиники
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-center text-regular" href="#">Naeun Hospital</a>
-                        <a class="dropdown-item text-center text-regular" href="#">SNU Hospital</a>
+                        <a class="dropdown-item text-center text-regular" href="/naeun-hospital/">Клиника Naeun</a>
+                        <a class="dropdown-item text-center text-regular" href="#">Клиника SNU</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item text-center text-regular text-muted" href="#">Add a clinic</a>
                     </div>
                 </li>
 
+                <!-- South Korea Tab -->
                 <li class="nav-item dropdown px-lg-3 px-md-1 text-center">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        South Korea
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Южная Корея
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-center text-regular" href="#">History</a>
-                        <a class="dropdown-item text-center text-regular" href="#">Medical Tourism</a>
+                        <a class="dropdown-item text-center text-regular" href="#">История</a>
+                        <a class="dropdown-item text-center text-regular" href="#">Мед туризм</a>
                     </div>
                 </li>
 
-                <li class="nav-item px-lg-5 mx-md-2">
+                <!-- Language settings -->
+                <!-- <li class="nav-item dropdown px-lg-3 px-md-1 text-center">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-globe-asia text-black"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-center text-regular" href="en">English</a>
+                        <a class="dropdown-item text-center text-regular text-muted" href="">Русский</a>
+                    </div>
+                </li> -->
 
-                </li>
+                
 
                 <li class="nav-item px-lg-3 text-center ">
                     <!--        <a class="nav-link" href="#">Contact</a>-->
-                    <button type="button" class="btn btn-block btn-light text-semibold text-white px-3" style="background-color: #82c31b">Contact</button>
+                    <button type="button" class="btn btn-block btn-light text-semibold text-white px-3"
+                        style="background-color: #82c31b">Связаться</button>
                 </li>
             </ul>
         </div>
     </nav>
-<!--   NAVIGATION BAR END <-->
-   
-<!--   HEADER PAGE-->
+    <!--   NAVIGATION BAR END <-->
+
+
+    <!--   HEADER PAGE-->
     <header class="masthead bg-light header-main pt-5 mt-4">
-           <div class="container">
+        <div class="container">
             <div class="row align-items-center justify-content-end">
-                <div class="col-md-7 col-sm-12 col-lg-6 text-center text-bold text-black py-5">
-                    <h3>
-                        <strong>Medical treatment in South Korea, country of limitless potential with progressive hospitals and innovative procedures.</strong>
-                    </h3>
+                <div class="col-md-7 col-sm-12 col-lg-6 text-center text-bold text-black py-5" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="shadow-p3">
+                        <strong>Медицинское лечение в Южной Корее, стране с передовыми медицинскими учреждениями</strong>
                     <br>
                     <br>
                     <h4>
-                        <strong>Do not hesitate, <span class="text-green">book now!</span></strong>
+                        <strong>Забронируйте сейчас, это <span class="text-green">бесплатно</span></strong>
                     </h4>
-                    
+
                     <form class="mt-5">
                         <div class="form-group mx-md-5 my-4">
-                            <!-- <label for="exampleFormControlTextarea1">Example textarea</label>-->
-                            <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="1" placeholder="Name"></textarea>
+                            <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="1"
+                                placeholder="Имя"></textarea>
                         </div>
                         <div class="form-group mx-md-5 my-4">
-                            <!-- <label for="exampleFormControlInput1">Email address</label>-->
-                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="E-mail">
+
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                                placeholder="Номер телефона">
                         </div>
                         <div class="form-group mx-md-5 my-4">
-                        <input class="btn btn-secondary color-green btn-block btn-lg text-semibold" type="submit" value="SEND">
+
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                                placeholder="Почта">
+                        </div>
+                        <div class="form-group mx-md-5 my-4">
+                            <input class="btn btn-secondary color-green btn-block btn-lg text-semibold" type="submit"
+                                value="Забронировать">
                         </div>
                     </form>
                 </div>
             </div>
-           </div>
-    </header>
-<!--  HEADER PAGE-->
-
-<!--  DESCRIPTION PAGE-->
-   <div class="container justify-content-center text-center px-0">
-       <div class="row justify-content-center">
-          <div class="col-lg-8 col-sm-12 py-5">
-              <h3 class="text-bold text-black pb-3">
-                  <span class="text-green">Elim Medical</span> - your trusted partner in <span class="text-green">South Korea</span>
-              </h3>
-              <hr>
-              <h5 class="text-black text-height">
-                  At Elim Medical, we always strive for complete customer satisfaction. Our comprehensive approach has taken every aspect of your treatment into consideration, which enables us to seamlessly link your needs and requests to our vast network of treatment centers, clinics and specialists.
-              </h5>
-          </div>
-       </div>
-       <div class="row justify-content-center pb-5">
-           <div class="col-lg-4 pb-4">
-               <span class="fas fa-clipboard-list text-green pb-4" style="font-size:7em"></span>
-               <p class="text-black text-regular px-5">We provide detailed information about medical institutions, as well as your personal treatment plan, different diagnostic options, schedules and prices.</p>
-           </div>
-           <div class="col-lg-4 pb-4">
-               <span class="fas fa-user-md text-green pb-4" style="font-size:7em"></span>
-               <p class="text-black text-regular px-5">Once the request is approved, we contact with medical institution for registration. Also, we provide help with medical documents, VISA and accomondation.</p>
-           </div>
-           <div class="col-lg-4 pb-4">
-               <span class="fas fa-procedures text-green pb-4" style="font-size:7em"></span>
-               <p class="text-black text-regular px-5">We provide comprehensive assistance during and after your visit in South Korea. If you have any issue, we are ready to help!</p>
-           </div>
         </div>
-   </div>
-<!--  DESCRIPTION PAGE-->
+    </header>
+    <!--  HEADER PAGE-->
+
+    <!--  DESCRIPTION PAGE-->
+    <div class="container justify-content-center text-center bg-light px-0">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm-12 py-5 mx-5" data-aos="fade-up">
+                <h3 class="text-bold text-black pb-3">
+                    <span class="text-green">Elim Medical</span> - ваш надежный партнер в <span
+                        class="text-green">Южной Корее</span>
+                </h3>
+                <hr>
+                <h5 class="text-black text-height">
+                    Мы всегда стремимся предоставить лучший сервис для наших клиентов. Принимая во внимание каждый аспект Вашего лечения,
+                    мы находим самые подходящие медицинские учреждения, клиники и экспертов. 
+                </h5>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-5 mx-3" data-aos="fade-up">
+            <div class="col-lg-4 pb-4">
+                <span class="fas fa-clipboard-list text-green pb-4" style="font-size:7em"></span>
+                <p class="text-black text-regular text-left">
+                1. Предоставляется детальная информация о медицинских учреждениях, возможных методах лечения, а так же список дат и цен.
+                </p>
+            </div>
+            <div class="col-lg-4 pb-4">
+                <span class="fas fa-user-md text-green pb-4" style="font-size:7em"></span>
+                <p class="text-black text-regular text-left">2. При подтверждении бронирования, идет процесс регистрации в выбранном медицинском учреждении. Предоставляется помощь с получением визы, бронированием авиабилетов и отелей.  
+                </p>
+            </div>
+            <div class="col-lg-4 pb-4">
+                <span class="fas fa-procedures text-green pb-4" style="font-size:7em"></span>
+                <p class="text-black text-regular text-left">3. Во время вашего медицинского лечения в Южной Корее, мы будем рады помочь вам с любыми вопросами.</p>
+            </div>
+        </div>
+    </div>
+    <!--  DESCRIPTION PAGE-->
     <hr class="container">
-<!--WHY KOREA PART-->
- <div class="container justify-content-center text-center bg-white px-0">
-          <h3 class="text-bold text-black pt-2">
-              Why <span class="text-green">South Korea?</span>
-          </h3>
-       <div class="row justify-content-center align-items-center pb-5 pt-3">
-          <div class="col-lg-5 col-md-12 text-left pl-1">
-             <h4 class="text-semibold">
-                 <span class="text-green">1.</span> Advanced medical technology and world-class medical expertise
-             </h4>
-             <br><br>
-             <h4 class="text-semibold">
-                <span class="text-green">2.</span> Highly qualified medical experts
-             </h4>
-             <br><br>
-             <h4 class="text-semibold">
-                <span class="text-green">3.</span> Lower expenses compared to other developed countries
-             </h4>
-          </div>
-          <div class="col-lg-7 col-sm-12">
-              <img  class="img-fluid" src="images/palace_seoul.png">
-          </div>
+    <!--WHY KOREA PART-->
+    <div class="container justify-content-center text-center bg-white px-0">
+        <h3 class="text-bold text-black pt-2">
+            Почему <span class="text-green">Южная Корея?</span>
+        </h3>
+        <div class="row justify-content-center pb-5 pt-3 align-items-center">
+            <div class="col-lg-5 col-sm-12 text-left p-sm-1 align-items-center" data-aos="fade-right">
+                <h4 class="text-semibold mx-2">
+                    <span class="text-green">1.</span> Передовые медицинские технологии и экспертиза мирового класса
+                </h4>
+                <br><br>
+                <h4 class="text-semibold mx-2">
+                    <span class="text-green">2.</span> Высококвалифицированные медицинские эксперты
+                </h4>
+                <br><br>
+                <h4 class="text-semibold mx-2">
+                    <span class="text-green">3.</span>Относительно низкая стоимость по сравнению с другими развитыми странами
+                </h4>
+                <div class="container p-5 m-4"></div>
+                <h3 class="text-bold px-2"> Статистика:</h3>
+                <h5 class="text-semibold px-2">
+                    <span class="text-green">321,574</span> людей посетили <span class="text-green">Южную Корею</span> в медицинских целях в 2017 году
+                </h5>
+                <h5 class="text-semibold px-2">
+                    <span class="text-green">1664</span> медицинских учреждений
+                </h5>
+                <h5 class="text-semibold px-2"><span class="text-green">1345</span> учреждений принимающих международных пациентов
+                </h5>
+                <span class="text-regular text-muted mx-2">(*<a
+                        href="http://english.visitmedicalkorea.com/eng/medicalTourSquare/aboufUs.jsp"
+                        target="_blank">согласно Нац. Организацией Туризма Кореи</a>)</span>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <img class="img-fluid" src="images/N-Tower.png">
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <p class="text-bold">
-                 <span class="text-green">321,574</span> people visited <span class="text-green">Korea</span> for medical services in 2017
-             </p> <br>
-             <p class="text-bold">
-                 <span class="text-green">1664</span> medical institutions and <span class="text-green">1345</span> facilitators accepting international patients
-             </p> <br>
-             <span class="text-regular text-muted">(*<a href="http://english.visitmedicalkorea.com/eng/medicalTourSquare/aboufUs.jsp" target="_blank">according to Korea Tourism Organization</a>)</span>
-    </div>
-    </div>
-<!--WHY KOREA PART-->
+    <!--WHY KOREA PART-->
 
-<!--FOOTER-->
-  <div class="container-fluid color-black">
-     <div class="container">
-      <div class="row justify-content-center py-5 text-white">
-          <div class="col-md-6 col-sm-12 text-left">
-              <a href="#">
-                  <img src="images/logo_white.png" height="60px">
-              </a> <br>
-          </div>
-           <div class="col-md-6 col-sm-12 text-left py-3">
-             <p>
-              Need help? Simply fill out the inquiry form to get support.
-             </p>
-             <p>
-                 <a class="text-white" href="#"> Contact Us →</a>
-             </p>
-          </div>
-          
-     </div>
-      </div>
-<!--      <p class="text-white-50 text-light text-center"> Copyright 2019</p>-->
-  </div>
-   <!--FOOTER-->
+    <!--FOOTER-->
+    <div class="container-fluid color-black">
+        <div class="container py-5">
+            <div class="row justify-content-center text-white">
+                <div class="col-md-6 col-sm-12 text-left">
+                    <a href="#">
+                        <img src="images/logo_white.png" height="60px">
+                    </a> <br>
 
-<!--
-   <p class="text-bold">
-                 <span class="text-green">321,574</span> people visited <span class="text-green">Korea</span> for medical services in 2017
-             </p>
-             <p class="text-bold">
-                 <span class="text-green">1664</span> medical institutions and <span class="text-green">1345</span> facilitators accepting international patients
-             </p>
-             <span class="text-regular text-muted">(*<a href="http://english.visitmedicalkorea.com/eng/medicalTourSquare/aboufUs.jsp" target="_blank">according to Korea Tourism Organization</a>)</span>
--->
-   
+                </div>
+                <div class="col-md-6 col-sm-12 text-left py-3">
+                    <p>
+                        Нужна помощь? Просто заполните форму ниже
+                    </p>
+                    <p>
+                        <a class="text-white" href="#">Свяжитесь с нами →</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="row justify-content-center text-white">
+                <div class="col-md-6 col-sm-12 text-left">
+                    <p class="text-semibold text-green">Партнеры:</p>
+                    <a class="text-white" href="http://eng.luga.co.kr/" >Клиника Naeun</a> <br>
+                    <a class="text-white" href="http://www.snuh.org/global/en/main.do" >Клиника Seoul National University</a>
+
+                </div>
+                <div class="col-md-6 col-sm-12 text-left">
+                    <p class="text-semibold text-green"> Социальные сети:</p>
+                    <!-- <img class="" src="/images/facebook-icon.svg"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
