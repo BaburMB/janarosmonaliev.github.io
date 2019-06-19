@@ -1,0 +1,26 @@
+@HW1{
+Initial website structure was shown on the board and sent to you through e-mail.
+}
+
+@HW2{
+I decided to use Bootstrap open-source framework (https://getbootstrap.com/) for this website.
+- The navigation bar was created with 5 tabs in it: About, Plans, Invest, Team, Contact;
+- Background image was added with a text on it;
+}
+
+@HW3{
+The whole website is functional, all links work. It now contains 5 pages with detailed information about our start-up. Again, the Bootstrap framework was used here, as well as everywhere else on this website.
+- Website is fully responsive (was checked using Chrome DevTools)
+- Finished App UI graphics in 'About' tab;
+- Team description added;
+- Contact form was added;
+- Chronological timeline was added;
+- Wide use of lists and tables can be seen in the code;
+}
+
+@HW4{
+- Photo slider was added to Team section (team.html)
+- Footer was updated
+- Contact section is now enabled with Google Forms
+- Icon is now a link for Main Page
+}
