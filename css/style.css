@@ -1,20 +1,22 @@
 html,
 body{
     height: 100%;
+    background-color: #000000;
 }
 html, body, h1, h2, h3, h5, h6, p{
-  font-family: Montserrat, sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 .navbar{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 .site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(37, 37, 37, .8);
+  -webkit-backdrop-filter: saturate(180%) blur(100px);
+  backdrop-filter: saturate(180%) blur(100px);
 }
 .site-header a {
   color: #999;
@@ -34,16 +36,16 @@ html, body, h1, h2, h3, h5, h6, p{
   font-weight: 700;
 }
 .text-regular{
-  font-weight: 500;
-}
-.text-semibold{
-  font-weight: 600;
-}
-.text-thin{
   font-weight: 400;
 }
-.text-white{
-  color: white;
+.text-semibold{
+  font-weight: 500;
+}
+.text-green{
+  color: #82c31b;
+}
+.color-black{
+  color: #000000;
 }
 .color-white{
   color: white;
@@ -54,20 +56,46 @@ html, body, h1, h2, h3, h5, h6, p{
 .text-shadow{
   text-shadow: 0px 0px 19px rgba(0,0,0,0.17);
 }
-.text-black{
-  color: #000000;
-}
 .text-gradient{
-  background: #11998e;  /*fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #26988e, #299d55);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #26988e, #299d55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #12c2e9;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .box-shadow{
-  box-shadow: 0px 0px 19px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 19px rgba(255, 255, 255, 0.25);
 }
+.background-dark{
+  background-color: #202020;
+}
+.profile{
+  margin-top: 5em;
+}
+#university-text{
+  background: #ff3c3c;  /* fallback for old browsers */
+  
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.java{
+  background: #00d2ff; /* fallback for old browsers */
+  /* box-shadow: 0px 0px 10px #5de1ff; */
+}
+.python{
+  background: #38ef7d;  /* fallback for old browsers */
+                  
+}
+.javascript{
+  background: #FC5C7D;  /*fallback for old browsers */
+}
+.html{
+  background: #FF8C00;  /* fallback for old browsers */
+
+}
+
 .item-1{
   background-image: url('/images/inHanguk_intro.png');
   background-position-y: 70%;
