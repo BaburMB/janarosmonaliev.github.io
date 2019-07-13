@@ -1,8 +1,11 @@
 <script type="text/javascript">
-   function fnct(){
-     document.getElementsByClassName('java')[0].setAttribute("style", "box-shadow: 0px 0px 10px #5de1ff;")
-   }
-   function fnctOff(){
-     document.getElementsByClassName('java'[0]).removeAttribute("style")
-   }
+var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+for (j = 0; j < alphabet.length; j++){
+  var letter = alphabet[j];
+  document.getElementById('empsearch_emp').value = letter;
+  for (i = 0; i < document.getElementsByClassName("data").length; i++){
+    console.log(document.getElementsByClassName('data')[i].innerText)
+  };
+};
+document.conds.submit();
   </script>
