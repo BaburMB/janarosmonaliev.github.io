@@ -4,6 +4,7 @@ body{
     width: 100%;
     /* overflow-x : hidden; */
     background-color: #000000;
+    /* background-color: rgb(241, 241, 241); */
 }
 html, body, h1, h2, h3, h5, h6, p{
   font-family: 'DM Sans', sans-serif;
@@ -60,8 +61,8 @@ html, body, h1, h2, h3, h5, h6, p{
 }
 .text-gradient{
   background: #12c2e9;  /* fallback for old browsers */
- background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
- background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: -webkit-linear-gradient(to right, #ca4049, #c471ed, #11b2d6);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #f64f59, #a65fc9, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
