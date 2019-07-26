@@ -88,52 +88,88 @@ background-clip: text;
   /* box-shadow: 0px 0px 10px #5de1ff; */
 }
 .python{
-  background: #38ef7d;  /* fallback for old browsers */
-                  
+  background: #38ef7d;  /* fallback for old browsers */                
 }
 .javascript{
   background: #FC5C7D;  /*fallback for old browsers */
 }
 .html{
   background: #FF8C00;  /* fallback for old browsers */
-
 }
 
-.item-1{
-  background-image: url('/images/inHanguk_intro.png');
-  background-position-y: 70%;
+.card-inhanguk{
+height: 550px;
+margin: 0, 0, 10px, 10px;
+padding-top: 40px;
+background-image: url(/images/inhanguk-card.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.card-fluence{
+height: 550px;
+margin: 0, 0, 10px, 10px;
+padding-top: 40px;
+background-image: url(/images/fluence-card.png);
+background-position-y: 60%;
+background-position-x: 50%;
+background-repeat: no-repeat;
+background-size: contain;
+background-color: #212121;
+}
+@media (max-width: 768px) {
+.card-fluence{
+  background-image: url(/images/fluence-card-sm.png);
+  background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.item-2{
-  background-image: url('/images/fluence-main.png');
-  background-position-y: 70%;
-  background-position-x: center;
-  background-size: 80%;
-  /* background-size: contain  ; */
-  background-repeat: no-repeat;
 }
-.item-3{
-  background-image: url('/images/logo_black.png');
-  background-position-y: 60%;
-  background-position-x: center;
-  background-size: 60%;
-  background-repeat: no-repeat;
+
+@media (max-width: 1200px) {
+  legend {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  h1,
+  .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  h2,
+  .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  h3,
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  h4,
+  .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  .display-1 {
+    font-size: calc(1.725rem + 5.7vw);
+  }
+  .display-2 {
+    font-size: calc(1.675rem + 5.1vw);
+  }
+  .display-3 {
+    font-size: calc(1.575rem + 3.9vw);
+  }
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+  }
+  .close {
+    font-size: calc(1.275rem + 0.3vw);
+  }
 }
-.item-4{
-  background-image: url('/images/TotoroBack.jpg');
-  background-position-y: 70%;
-  background-position-x: center;
-  background-size: 40%;
-  background-repeat: no-repeat;
-}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 }
 
 /* // Large devices (desktops, 992px and up) */
