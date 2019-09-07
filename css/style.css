@@ -2,38 +2,27 @@ html,
 body{
     height: 100%;
     width: 100%;
-    /* overflow-x : hidden; */
-    background-color: #000000;
-    /* background-color: rgb(241, 241, 241); */
+    overflow-x: hidden;
 }
 html, body, h1, h2, h3, h5, h6, p{
   font-family: 'DM Sans', sans-serif;
 }
 .navbar{
     font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.site-header {
-  background-color: rgba(37, 37, 37, .8);
-  -webkit-backdrop-filter: saturate(180%) blur(100px);
-  backdrop-filter: saturate(180%) blur(100px);
-}
-.site-header a {
-  color: #999;
-  transition: ease-in-out color .15s;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.overflow-hidden { overflow: hidden; }
+
 .box-item{
   height: 500px;
 }
+.box-space{
+  padding-top: 100px;
+  padding-bottom: 100px;
 
+}
 /* Custom text CSS */
 .text-bold{
   font-weight: 700;
@@ -47,7 +36,10 @@ html, body, h1, h2, h3, h5, h6, p{
 .text-green{
   color: #82c31b;
 }
-.color-black{
+.text-white{
+  color: #E5E5E5;
+}
+.text-black{
   color: #000000;
 }
 .color-white{
@@ -71,7 +63,7 @@ html, body, h1, h2, h3, h5, h6, p{
   box-shadow: 0px 0px 19px rgba(255, 255, 255, 0.25);
 }
 .background-dark{
-  background-color: #202020;
+  background-color: #FFFFFF;
 }
 .profile{
   margin-top: 5em;
@@ -84,17 +76,17 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 .java{
-  background: #00d2ff; /* fallback for old browsers */
+  background: #FFFFFF; /* fallback for old browsers */
   /* box-shadow: 0px 0px 10px #5de1ff; */
 }
 .python{
-  background: #38ef7d;  /* fallback for old browsers */                
+  background: #FFFFFF;  /* fallback for old browsers */                
 }
 .javascript{
-  background: #FC5C7D;  /*fallback for old browsers */
+  background: #FFFFFF;  /*fallback for old browsers */
 }
 .html{
-  background: #FF8C00;  /* fallback for old browsers */
+  background: #FFFFFF;  /* fallback for old browsers */
 }
 
 .card-inhanguk{
