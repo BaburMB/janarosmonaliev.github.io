@@ -49,7 +49,7 @@ html, body, h1, h2, h3, h5, h6, p{
   background-color: #82c31b;
 }
 .text-shadow{
-  text-shadow: 0px 0px 19px rgba(0,0,0,0.17);
+  text-shadow: 0px 0px 100px rgba(82, 82, 82, 0.1);
 }
 .text-gradient{
   background: #12c2e9;  /* fallback for old browsers */
@@ -108,8 +108,29 @@ background-position-y: 60%;
 background-position-x: 50%;
 background-repeat: no-repeat;
 background-size: contain;
-background-color: #212121;
+background-color: #FFFFFF;
 }
+
+.card-arvizon{
+height: 550px;
+margin: 0, 0, 10px, 10px;
+padding-top: 40px;
+background-image: url(/images/arvizon-card.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.card-art{
+height: 550px;
+margin: 0, 0, 10px, 10px;
+padding-top: 40px;
+background-image: url(/images/art-card.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 @media (max-width: 768px) {
 .card-fluence{
   background-image: url(/images/fluence-card-sm.png);
