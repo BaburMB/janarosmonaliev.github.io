@@ -5,10 +5,10 @@ body{
     overflow-x: hidden;
 }
 html, body, h1, h2, h3, h5, h6, p{
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .navbar{
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 400;
     padding-top: 10px;
@@ -19,8 +19,8 @@ html, body, h1, h2, h3, h5, h6, p{
   height: 500px;
 }
 .box-space{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
 }
 /* Custom text CSS */
@@ -28,13 +28,13 @@ html, body, h1, h2, h3, h5, h6, p{
   font-weight: 700;
 }
 .text-regular{
-  font-weight: 400;
-}
-.text-semibold{
   font-weight: 500;
 }
-.text-green{
-  color: #82c31b;
+.text-semibold{
+  font-weight: 600;
+}
+.text-purple{
+  color: #8c11ff;
 }
 .text-white{
   color: #E5E5E5;
@@ -52,15 +52,13 @@ html, body, h1, h2, h3, h5, h6, p{
   text-shadow: 0px 0px 100px rgba(82, 82, 82, 0.1);
 }
 .text-gradient{
-  background: #12c2e9;  /* fallback for old browsers */
- background: -webkit-linear-gradient(to right, #ca4049, #c471ed, #11b2d6);  /* Chrome 10-25, Safari 5.1-6 */
- background: linear-gradient(to right, #f64f59, #a65fc9, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8c11ff;  /* fallback for old browsers */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .box-shadow{
-  box-shadow: 0px 0px 19px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 70px rgba(189, 189, 189, 0.25);
 }
 .box-rounded{
   border-radius: 3%;
@@ -100,6 +98,15 @@ background-image: url(/images/inhanguk-card.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+}
+
+.card-link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .card-fluence{
@@ -186,6 +193,9 @@ background-size: cover;
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .box-space{
+    margin-bottom: 150px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */

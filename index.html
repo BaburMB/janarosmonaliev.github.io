@@ -7,19 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500,600,700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
+
   <!-- Icons and Fonts -->
   <script defer src="js/all.js"></script>
-  <!--load all styles -->
 
   <!--Custom CSS and Fonts-->
   <link rel="stylesheet" href="css/style.css">
-
 
   <!-- Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -29,11 +27,37 @@
 </head>
 
 <body class="bg-light">
+
+  <!-- JavaScript Part -->
+  <!-- <script type="text/javascript">
+
+    function validateAll() {
+
+    }
+
+    //  Secondary Functions:
+    function validateName() {
+      var text = name.value;
+      if (text == null){}
+      //this should check whether it is empty or has number;
+    }
+
+    function validateEmail() {
+
+    }
+
+    function validateMessage() {
+
+    }
+
+  </script> -->
+  <!-- End of JavaScript Part -->
+
   <div class="container">
-    <nav class="navbar site-header fixed-top navbar-expand-sm navbar-light mx-auto bg-white" data-aos="fade-down">
+    <nav class="navbar site-header fixed-top navbar-expand-sm navbar-light mx-auto bg-white box-shadow">
       <div class="container">
-        <a class="navbar-brand text-gradient text-bold" href="index.html">
-          | Zhanarbek | </a>
+        <a class="navbar-brand text-black text-bold" href="index.html">
+          Zhanarbek Osmonaliev</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,28 +76,30 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Contact Form</h5>
+          <h4 class="modal-title text-bold ml-5" id="exampleModalCenterTitle">Contact Form</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body mb-1">
           <form class="px-5" action="https://mailthis.to/janarosmonaliev" method="POST" enctype="multipart/form-data">
-              <label for="exampleInputPassword1">Name</label>
-              <input type="text" class="form-control mb-3" name="Name" placeholder="Enter your name">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control mb-3" aria-describedby="emailHelp" name="_replyto" placeholder="Enter email">
-              <label for="exampleFormControlTextarea1">Message</label>
-              <textarea class="form-control mb-3" name="message" rows="3" placeholder="Enter message here"></textarea>
+            <label for="exampleInputPassword1" class="h6 text-bold">Name</label>
+            <input type="text" class="form-control mb-3" name="Name" placeholder="Enter your name">
+            <label for="exampleInputEmail1" class="h6 text-bold">Email address</label>
+            <input type="email" class="form-control mb-3" aria-describedby="emailHelp" name="_replyto"
+              placeholder="Enter email">
+            <label for="exampleFormControlTextarea1" class="h6 text-bold">Message</label>
+            <textarea class="form-control mb-3" name="message" rows="3" placeholder="Enter message here"></textarea>
             <hr>
             <input type="submit" value="Send" class="btn btn-success btn-block px-5">
-            <button type="button" class="btn btn-outline-danger btn-block px-5" data-dismiss="modal" >Cancel</button>
-            
-          </form> 
+            <button type="button" class="btn btn-outline-danger btn-block px-5" data-dismiss="modal">Cancel</button>
+
+          </form>
         </div>
       </div>
     </div>
@@ -84,12 +110,13 @@
   <div class="container profile pt-5">
     <div class="row justify-content-center mb-5 align-items-center">
       <div class="col-lg-5 col-md-5">
-        <img class="img-fluid mx-auto d-block" src="images/profile.png" data-aos="fade-right" data-aos-duration="1000">
+        <img class="img-fluid mx-auto d-block" src="images/profile-picture.png" style="width: 80%;">
       </div>
-      <div class="col-lg-7 col-md-7 text-center pb-5" data-aos="fade-left" data-aos-duration="1000">
-        <p class="text-black text-regular display-2 pt-md-5">Hello, my name is <span class="text-bold">Zhanarbek!</span>
+      <div class="col-lg-7 col-md-7 text-center pb-5">
+        <p class="text-black text-regular display-3 pt-md-5">Hello, my name is <span class="text-bold">Zhanarbek!</span>
         </p>
-        <!-- <h4 class="text-black text-regular">Let me tell you more about myself.</h4> -->
+        <h6 class="text-secondary text-regular mt-5">Scroll down to discover more about me <span><img
+              src="images/chevron-down.svg"></span></h6>
       </div>
     </div>
   </div>
@@ -97,203 +124,61 @@
 
   <!-- EDUCATION -->
   <div class="container box-space">
-    <h1 class="text-black text-bold display-3 mb-3 text-danger">Education </h1>
-    <div class="row mt-5 background-white px-4 pb-4 pt-5 box-rounded">
+    <h1 class="text-black text-bold display-4">Education</h1>
+    <div class="row mt-5 background-white px-4 pb-5 pt-5 box-rounded">
       <div class="col-md-8">
         <h2 class="text-bold mb-4">StonyBrook University & SUNY Korea</h2>
         <h5 class="text-regular">SUNY Korea was established in March 2012 as the first American university in Korea’s
           only smart city, Songdo. As the first branch of Stony Brook University built outside of the United States, it
           represents a groundbreaking effort to provide world-class education across the globe.</h5>
-          <h5 class="text-semibold">However, I believe that university degree never defines someone's value in this world.
-            We learn the majority of vital life lessons outside of school.
-          </h5>
+        <h5 class="text-semibold">However, I believe that university degree never defines someone's value in this world.
+          We learn the majority of vital life lessons outside of school.
+        </h5>
       </div>
       <div class="col-md-4 py-3 px-3">
         <img class="img-fluid mx-auto d-block" src="/images/sbu-logo.png">
       </div>
     </div>
-    <div class="row mt-5 px-0">
-
-      <div class="col-md-4 text-center">
-        <img class="img-fluid box-rounded" src="/images/suny-view-1.jpg.png">
-        <h5 class="text-black mt-4 mb-5   text-semibold">Library, Block A</h5>
-      </div>
-      <div class="col-md-4 text-center">
-        <img class="img-fluid box-rounded" src="/images/suny-view-4.jpg.png">
-        <h5 class="text-black mt-4 mb-5 text-semibold">Courtyyard, Block B</h5>
-      </div>
-      <div class="col-md-4 text-center">
-        <img class="img-fluid box-rounded" src="/images/suny-view-2.jpg.png">
-        <h5 class="text-black mt-4 mb-5 text-semibold">SUNY Korea, Air View</h5>
-      </div>
-    </div>
   </div>
   <!-- END OF EDICATION -->
 
-  <!-- PROGRAMMING -->
+  <!-- SPECIALIZING IN -->
   <div class="container box-space">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1 class="text-primary text-bold display-4">Programming Languages</h1>
-        <div class="row">
-          <div class="col-sm-12 col-md-6 mt-3">
-            <div class="card java">
-              <div class=" card-body">
-                <h3 class="card-title text-bold text-black">Java</h3>
-                <h6 class="card-subtitle mb-2 text-dark">Object-Oriented Programming</h6>
-                <p class="card-text text-black">Some quick example text to build on the card title and make
-                  up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 mt-3">
-            <div class="card python">
-              <div class="card-body">
-                <h3 class="card-title text-bold color-black">Python</h3>
-                <h6 class="card-subtitle mb-2 text-dark">Card subtitle</h6>
-                <p class="card-text color-black text-semibold">Some quick example text to build on the card title and
-                  make
-                  up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 d-block mt-3">
-            <div class="card javascript">
-              <div class="card-body">
-                <h3 class="card-title text-bold color-black">JavaScript</h3>
-                <h6 class="card-subtitle mb-2 text-dark">Object-Oriented Programming</h6>
-                <p class="card-text color-black text-semibold">Some quick example text to build on the card title and
-                  make
-                  up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-block mt-3">
-            <div class="card html">
-              <div class="card-body">
-                <h3 class="card-title text-bold color-black">HTML/CSS</h3>
-                <h6 class="card-subtitle mb-2 text-dark">Card subtitle</h6>
-                <p class="card-text color-black text-semibold">Some quick example text to build on the card title and
-                  make
-                  up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <h1 class="display-4 text-black text-bold"> Specializing in</h1>
+    <div class="row mt-5 px-0">
+      <div class="col-md-4 text-left mb-3">
+        <img class="img-fluid box-rounded" src="/images/ux-design-card.svg">
+      </div>
+      <div class="col-md-4 text-center mb-3">
+        <img class="img-fluid box-rounded" src="/images/graphic-design-card.svg">
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="img-fluid box-rounded" src="/images/photography-card.svg">
       </div>
     </div>
   </div>
-  <!-- END OF PROGRAMMING -->
+  <!-- END OF SPECIALIZING IN -->
 
-  <!-- SKILLS -->
-  <div class="container box-space">
-    <div class="row">
-      <div class="col-md-6 col-sm-12 mt-4">
-        <h2 class="text-green display-4 text-bold">Languages</h2>
-        <div class="card mt-4">
-          <div class="card-body text-black">
-            <h3 class="card-title text-semibold">English <span
-                class="text-semibold text-muted h4">&nbsp&nbsp(fluent)</span>
-            </h3>
-            <div class="progress mb-4">
-              <div class="progress-bar color-green" role="progressbar" style="width: 100%" aria-valuenow="100"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h3 class="card-title  text-semibold">Russian <span
-                class="text-semibold text-muted h4">&nbsp&nbsp(native)</span></h3>
-            <div class="progress mb-4">
-              <div class="progress-bar color-green" role="progressbar" style="width: 100%" aria-valuenow="100"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h3 class="card-title text-semibold">Kyrgyz <span
-                class="text-semibold text-muted h4">&nbsp&nbsp(conversational)</span></h3>
-            <div class="progress mb-4">
-              <div class="progress-bar color-green" role="progressbar" style="width: 75%" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h3 class="card-title text-semibold">Turkish <span
-                class="text-semibold text-muted h4">&nbsp&nbsp(conversational)</span></h3>
-            <div class="progress mb-4 ">
-              <div class="progress-bar color-green" role="progressbar" style="width: 50%" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h3 class="card-title text-semibold">Korean <span
-                class="text-semibold text-muted h4">&nbsp&nbsp(beginner)</span></h3>
-            <div class="progress mb-4">
-              <div class="progress-bar color-green" role="progressbar" style="width: 10%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class=" col-sm-12 col-md-6 mt-4">
-        <h2 class="text-green display-4 text-bold">Software Skills</h2>
-        <div class="card px-0 mt-4" style="height: 90%;">
-          <div class="card-body align-items-center px-0">
-            <div class="container-fluid align-items-center px-0">
-              <div class="row justify-content-between my-5">
-                <div class="col-3 ml-auto d-block mx-1">
-                  <img src="images/ps_cc_app_RGB.svg">
-                  <p class="text-black text-center mt-1 mb-0">Photoshop</p>
-                </div>
-                <div class="col-3 mx-auto d-block mx-1">
-                  <img src="images/lightroom-cc.svg">
-                  <p class="text-black text-center mt-1 mb-0
-                  ">Lightroom</p>
-                </div>
-                <div class="col-3 mr-auto d-block mx-1">
-                  <img src="images/pr_cc_app_RGB.svg">
-                  <p class="text-black text-center mt-1 mb-0">Premiere Pro</p>
-                </div>
-              </div>
-              <div class="row justify-content-between my-5">
-                <div class="col-3 ml-auto d-block mx-1">
-                  <img src="images/xd_app_RGB.svg">
-                  <p class="text-black text-center mt-1 mb-0">XD</p>
-                </div>
-                <div class="col-3 mx-auto d-block mx-1">
-                  <img src="images/spark_app_RGB.svg">
-                  <p class="text-black text-center mt-1 mb-0">Spark</p>
-                </div>
-                <div class="col-3 mr-auto d-block mx-1">
-                  <img src="images/office_logo.svg" class="img-fluid">
-                  <p class="text-black text-center mt-1 mb-0">MS Office</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+  <!-- EXPERIENCE -->
+  <div class="container-fluid box-space" style="max-width: 2560px">
+    <div class="container">
+      <h1 class="text-black display-4 text-bold">Experience</h1>
     </div>
-  </div>
-  <!-- END OF SKILLS -->
-  <div class="container pt-5 pb-5 box-space">
-    <h1 class="text-primary display-3 text-bold">Experience.</h1>
-  </div>
-
-  <div class="container-fluid" style="max-width: 2560px">
-    <div class="row justify-content-between">
+    <div class="row justify-content-between mt-5">
       <div class="col-md-6 pr-md-1 pt-2">
         <div class="card-inhanguk text-center">
           <h2 class="text-black text-bold">inHanguk Startup</h2>
-          <h5 class="text-primary text-semibold">UI & Web Designer</h5>
+          <h4 class="text-purple text-semibold">UI & Web Designer</h4>
+          <a href=""> <span class="card-link"></span> </a>
+          <!-- put link here -->
         </div>
       </div>
       <div class="col-md-6 pl-md-1 pt-2">
         <div class="card-fluence text-center pt-5">
           <h2 class="text-black text-bold">JunctionX Seoul</h2>
-          <h5 class="text-primary text-semibold">Designer and Front-End Developer</h5>
+          <h4 class="text-purple text-semibold">Designer and Front-End Developer</h4>
+          <a href=""> <span class="card-link"></span> </a>
+          <!-- put link here -->
         </div>
       </div>
     </div>
@@ -301,56 +186,29 @@
       <div class="col-md-6 pr-md-1 pt-2">
         <div class="card-arvizon text-center ">
           <h2 class="text-black text-bold">Internship at Arvizon Ltd.</h2>
-          <h5 class="text-primary text-semibold">UI & UX Designer</h5>
+          <h4 class="text-purple text-semibold">UI & UX Designer</h4>
+          <a href=""> <span class="card-link"></span> </a>
+          <!-- put link here -->
         </div>
       </div>
       <div class="col-md-6 pl-md-1 pt-2">
         <div class="card-art text-center ">
           <h2 class="text-black text-bold">Commercial Works</h2>
-          <h5 class="text-primary text-semibold">Design & Art</h5>
+          <h4 class="text-purple text-semibold">Design & Art</h4>
+          <a href=""> <span class="card-link"></span> </a>
+          <!-- put link here -->
         </div>
       </div>
     </div>
   </div>
-
-
-
-  <div class="container my-5 d-none">
-
-    <div class="row justify-content-center">
-      <div class=" col-sm-12 col-md-6 text-center box-item item-1 bg-light" href="./inhanguk.github.io/" target="blank">
-
-        <h2 class="color-black mt-5 text-bold">inHanguk Startup</h2>
-        <h5 class="text-thin text-black">UI & Web Designer</h5>
-      </div>
-      <div class="col-1"></div>
-      <div class="col-sm-12 col-md-5 text-center box-item item-2 bg-dark" href="./junctionx/" target="blank">
-        <h2 class="color-black mt-5 text-bold">JunctionX Seoul</h2>
-        <h5 class="text-thin text-black">Designer & Front-End Developed</h5>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-6 text-center box-item item-3 bg-light" href="./elimmedical/" target="black">
-        <h2 class="color-black mt-5 text-bold">ElimMedical Co.</h2>
-        <h5 class="text-thin text-black">Commercial Project</h5>
-      </div>
-      <div class="col-md-6 text-center box-item item-4 bg-light" href="#">
-        <h2 class="color-black mt-5 text-bold">Design Portfolio</h2>
-        <h5 class="text-thin text-black">Commercial Projects</h5>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-
-  </div>
-
-
+  <!-- END OF EXPERIENCE -->
 
   <!-- Optional JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script> AOS.init();</script>
+
+  <!-- <script> AOS.init();</script> -->
+  <!-- stop it for some time; -->
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
