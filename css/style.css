@@ -51,6 +51,9 @@ html, body, h1, h2, h3, h5, h6, p{
 .text-shadow{
   text-shadow: 0px 0px 100px rgba(82, 82, 82, 0.1);
 }
+.text-yellow{
+  color: #fffd66;
+}
 .text-gradient{
   background: #8c11ff;  /* fallback for old browsers */
   -webkit-background-clip: text;
@@ -61,7 +64,7 @@ html, body, h1, h2, h3, h5, h6, p{
   box-shadow: 0px 0px 70px rgba(189, 189, 189, 0.25);
 }
 .box-rounded{
-  border-radius: 3%;
+  border-radius: 20px;
 }
 .background-white{
   background-color: #FFFFFF;
@@ -139,6 +142,19 @@ background-image: url(/images/art-card.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+}
+
+.education-card{
+  background-image: linear-gradient(to right, #9000ff, #4848f6);
+}
+.btn-purple{
+  background-image: linear-gradient(to right, #9000ff, #4848f6);
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+.btn-purple:hover{
+  color: rgb(230, 230, 230);
+  background-image: linear-gradient(to right, #5d00a5, #2c2c94);
 }
 
 @media (max-width: 768px) {

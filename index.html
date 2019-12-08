@@ -29,7 +29,7 @@
 <body class="bg-light">
 
   <!-- JavaScript Part -->
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
 
     function validateAll() {
 
@@ -50,7 +50,7 @@
 
     }
 
-  </script> -->
+  </script>
   <!-- End of JavaScript Part -->
 
   <div class="container">
@@ -78,26 +78,32 @@
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content box-rounded">
+        
         <div class="modal-header">
-          <h4 class="modal-title text-bold ml-5" id="exampleModalCenterTitle">Contact Form</h4>
+          <h3 class="modal-title text-bold ml-md-5 ml-2 text-purple" id="exampleModalCenterTitle">Contact Me</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body mb-1">
-          <form class="px-5" action="https://mailthis.to/janarosmonaliev" method="POST" enctype="multipart/form-data">
+          <div class="container-fluid px-2 px-md-5 mb-md-3">
+            <p class="text-semibold text-secondary" id="message-alert"> Let's collaborate on our next awesome project!</p>
+
+          </div>
+
+          <form class="px-md-5 px-2" action="https://mailthis.to/janarosmonaliev" method="POST" enctype="multipart/form-data">
             <label for="exampleInputPassword1" class="h6 text-bold">Name</label>
-            <input type="text" class="form-control mb-3" name="Name" placeholder="Enter your name">
+            <input type="text" class="form-control mb-3" id="name" name="Name" placeholder="Enter your name">
             <label for="exampleInputEmail1" class="h6 text-bold">Email address</label>
             <input type="email" class="form-control mb-3" aria-describedby="emailHelp" name="_replyto"
               placeholder="Enter email">
             <label for="exampleFormControlTextarea1" class="h6 text-bold">Message</label>
-            <textarea class="form-control mb-3" name="message" rows="3" placeholder="Enter message here"></textarea>
-            <hr>
-            <input type="submit" value="Send" class="btn btn-success btn-block px-5">
-            <button type="button" class="btn btn-outline-danger btn-block px-5" data-dismiss="modal">Cancel</button>
+            <textarea class="form-control mb-4" name="message" rows="3" placeholder="Enter message here"></textarea>
+            
+            <input type="submit" value="Send" class="btn btn-purple btn-lg btn-block px-5 py-2 mb-2 box-rounded">
+            <button type="button" class="btn btn-outline-danger btn-block btn-lg px-5 py-2 mb-1 box-rounded" data-dismiss="modal">Cancel</button>
 
           </form>
         </div>
@@ -125,13 +131,14 @@
   <!-- EDUCATION -->
   <div class="container box-space">
     <h1 class="text-black text-bold display-4">Education</h1>
-    <div class="row mt-5 background-white px-4 pb-5 pt-5 box-rounded">
+    <div class="row mt-5 education-card px-4 pb-5 pt-5 box-rounded">
       <div class="col-md-8">
-        <h2 class="text-bold mb-4">StonyBrook University & SUNY Korea</h2>
-        <h5 class="text-regular">SUNY Korea was established in March 2012 as the first American university in Korea’s
+        <h2 class="text-bold text-white">StonyBrook University & SUNY Korea</h2>
+        <h5 class="text-semibold text-yellow mb-4">Computer Science</h5>
+        <h5 class="text-regular text-white">SUNY Korea was established in March 2012 as the first American university in Korea’s
           only smart city, Songdo. As the first branch of Stony Brook University built outside of the United States, it
           represents a groundbreaking effort to provide world-class education across the globe.</h5>
-        <h5 class="text-semibold">However, I believe that university degree never defines someone's value in this world.
+        <h5 class="text-semibold text-light">However, I believe that university degree never defines someone's value in this world.
           We learn the majority of vital life lessons outside of school.
         </h5>
       </div>
@@ -143,7 +150,7 @@
   <!-- END OF EDICATION -->
 
   <!-- SPECIALIZING IN -->
-  <div class="container box-space">
+  <div class="container box-space px-0">
     <h1 class="display-4 text-black text-bold"> Specializing in</h1>
     <div class="row mt-5 px-0">
       <div class="col-md-4 text-left mb-3">
@@ -202,6 +209,8 @@
     </div>
   </div>
   <!-- END OF EXPERIENCE -->
+
+  
 
   <!-- Optional JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
