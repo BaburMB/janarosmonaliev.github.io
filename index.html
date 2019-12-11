@@ -6,6 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Animations -->
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500,600,700&display=swap" rel="stylesheet">
 
@@ -19,40 +21,13 @@
   <!--Custom CSS and Fonts-->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <!-- JavaScript Part -->
+  <script src="js/main.js" type="text/javascript"></script>
 
   <title>Portfolio | Janarbek Osmonaliev</title>
 </head>
 
 <body class="bg-light">
-
-  <!-- JavaScript Part -->
-  <script type="text/javascript">
-
-    function validateAll() {
-
-    }
-
-    //  Secondary Functions:
-    function validateName() {
-      var text = name.value;
-      if (text == null){}
-      //this should check whether it is empty or has number;
-    }
-
-    function validateEmail() {
-
-    }
-
-    function validateMessage() {
-
-    }
-
-  </script>
-  <!-- End of JavaScript Part -->
-
   <div class="container">
     <nav class="navbar site-header fixed-top navbar-expand-sm navbar-light mx-auto bg-white box-shadow">
       <div class="container">
@@ -80,7 +55,7 @@
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content box-rounded">
-        
+
         <div class="modal-header">
           <h3 class="modal-title text-bold ml-md-5 ml-2 text-purple" id="exampleModalCenterTitle">Contact Me</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -89,21 +64,27 @@
         </div>
         <div class="modal-body mb-1">
           <div class="container-fluid px-2 px-md-5 mb-md-3">
-            <p class="text-semibold text-secondary" id="message-alert"> Let's collaborate on our next awesome project!</p>
+            <p class="text-semibold text-secondary" id="message-alert"> Let's collaborate on our next awesome project!
+            </p>
 
           </div>
-
-          <form class="px-md-5 px-2" action="https://mailthis.to/janarosmonaliev" method="POST" enctype="multipart/form-data">
+          <form class="px-md-5 px-2" action="https://mailthis.to/janarosmonaliev" method="POST"
+            enctype="multipart/form-data" id="contactForm">
             <label for="exampleInputPassword1" class="h6 text-bold">Name</label>
-            <input type="text" class="form-control mb-3" id="name" name="Name" placeholder="Enter your name">
+            <input type="text" class="form-control mb-3" id="name" name="Name" placeholder="Enter your name"
+              onclick="isValid(this)">
             <label for="exampleInputEmail1" class="h6 text-bold">Email address</label>
-            <input type="email" class="form-control mb-3" aria-describedby="emailHelp" name="_replyto"
-              placeholder="Enter email">
+            <input type="email" class="form-control mb-3" id="email" aria-describedby="emailHelp" name="_replyto"
+              placeholder="Enter email" onclick="isValid(this)">
             <label for="exampleFormControlTextarea1" class="h6 text-bold">Message</label>
-            <textarea class="form-control mb-4" name="message" rows="3" placeholder="Enter message here"></textarea>
-            
-            <input type="submit" value="Send" class="btn btn-purple btn-lg btn-block px-5 py-2 mb-2 box-rounded">
-            <button type="button" class="btn btn-outline-danger btn-block btn-lg px-5 py-2 mb-1 box-rounded" data-dismiss="modal">Cancel</button>
+            <textarea class="form-control mb-4" name="message" id="msg" rows="3" placeholder="Enter message here"
+              onclick="isValid(this)"></textarea>
+
+            <!-- <input type="submit" value="Send" class="btn btn-purple btn-lg btn-block px-5 py-2 mb-2 box-rounded"> -->
+            <input type="button" value="Send" class="btn btn-purple btn-lg btn-block px-5 py-2 mb-2 box-rounded"
+              onclick="validateAll();">
+            <button type="button" class="btn btn-outline-danger btn-block btn-lg px-5 py-2 mb-1 box-rounded"
+              data-dismiss="modal" onclick="clearAll();">Cancel</button>
 
           </form>
         </div>
@@ -131,28 +112,107 @@
   <!-- EDUCATION -->
   <div class="container box-space">
     <h1 class="text-black text-bold display-4">Education</h1>
-    <div class="row mt-5 education-card px-4 pb-5 pt-5 box-rounded">
-      <div class="col-md-8">
-        <h2 class="text-bold text-white">StonyBrook University & SUNY Korea</h2>
-        <h5 class="text-semibold text-yellow mb-4">Computer Science</h5>
-        <h5 class="text-regular text-white">SUNY Korea was established in March 2012 as the first American university in Korea’s
-          only smart city, Songdo. As the first branch of Stony Brook University built outside of the United States, it
-          represents a groundbreaking effort to provide world-class education across the globe.</h5>
-        <h5 class="text-semibold text-light">However, I believe that university degree never defines someone's value in this world.
-          We learn the majority of vital life lessons outside of school.
-        </h5>
+    <div class="container background-purple box-rounded" data-aos="fade-up">
+      <div class="row mt-5 pb-5 pt-5 px-md-4 px-3">
+        <div class="col-md-8">
+          <h2 class="text-bold text-white">StonyBrook University & SUNY Korea</h2>
+          <h5 class="text-semibold text-yellow mb-4">Computer Science</h5>
+          <h5 class="text-regular text-white">SUNY Korea was established in March 2012 as the first American university
+            in Korea’s
+            only smart city, Songdo. As the first branch of Stony Brook University built outside of the United States,
+            it
+            represents a groundbreaking effort to provide world-class education across the globe.</h5>
+          <h5 class="text-semibold text-light">However, I believe that university degree never defines someone's value
+            in this world.
+            We learn the majority of vital life lessons outside of school.
+          </h5>
+        </div>
+        <div class="col-md-4 py-3 px-3">
+          <img class="img-fluid mx-auto d-block" src="/images/sbu-logo.png">
+        </div>
       </div>
-      <div class="col-md-4 py-3 px-3">
-        <img class="img-fluid mx-auto d-block" src="/images/sbu-logo.png">
-      </div>
+
     </div>
   </div>
   <!-- END OF EDICATION -->
 
+  <!-- LANGUAGES -->
+  <div class="container-fluid box-space px-0" style="max-width: 2560px">
+    <div class="container">
+      <h2 class="text-black display-4 text-bold">Languages</h2>
+    </div>
+    <div class="mt-5" style="background-color: #ebebeb;">
+      <div class="row px-sm-1 px-md-3 py-5">
+        <div class="col-lg text-center">
+            <div class="card box-rounded bg-white border-white">
+                <div class="card-body text-left mt-1">
+                  <h3 class="text-bold text-black">Russian <span><img class="img-fluid float-right" src="images/russia-flag.png"></span></h3>
+                  <p class="text-muted text-semibold">Native</p>
+                  <div class="progress my-4">
+                      <div class="progress-bar background-purple" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="col-lg text-center">
+            <div class="card box-rounded bg-white border-white">
+                <div class="card-body text-left mt-1">
+                  <h3 class="text-bold text-black">English <span><img class="img-fluid float-right" src="images/us-flag.png"></span></h3>
+                  <p class="text-muted text-semibold">Fluent</p>
+                  <div class="progress my-4">
+                      <div class="progress-bar background-purple" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="col-lg text-center">
+            <div class="card box-rounded bg-white border-white">
+                <div class="card-body text-left mt-1">
+                  <h3 class="text-bold text-black">Kyrgyz <span><img class="img-fluid float-right" src="images/kyrgyzstan-icon.png"></span></h3>
+                  <p class="text-muted text-semibold">Conversational</p>
+                  <div class="progress my-4">
+                      <div class="progress-bar background-purple" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="col-lg text-center">
+            <div class="card box-rounded bg-white border-white">
+                <div class="card-body text-left mt-1">
+                  <h3 class="text-bold text-black">Turkish <span><img class="img-fluid float-right" src="images/turkey-flag.png"></span></h3>
+                  <p class="text-muted text-semibold">Conversational</p>
+                  <div class="progress my-4">
+                      <div class="progress-bar background-purple" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="col-lg text-center">
+            <div class="card box-rounded bg-white border-white">
+                <div class="card-body text-left mt-1">
+                  <h3 class="text-bold text-black">Korean <span><img class="img-fluid float-right" src="images/korea-flag.png"></span></h3>
+                  <p class="text-muted text-semibold">Beginner</p>
+                  <div class="progress my-4">
+                      <div class="progress-bar background-purple" role="progressbar" style="width: 10%" aria-valuenow="10"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF LANGUAGES -->
+
   <!-- SPECIALIZING IN -->
-  <div class="container box-space px-0">
+  <div class="container box-space">
     <h1 class="display-4 text-black text-bold"> Specializing in</h1>
-    <div class="row mt-5 px-0">
+    <div class="row mt-5" data-aos="fade-up">
       <div class="col-md-4 text-left mb-3">
         <img class="img-fluid box-rounded" src="/images/ux-design-card.svg">
       </div>
@@ -210,13 +270,38 @@
   </div>
   <!-- END OF EXPERIENCE -->
 
-  
+  <!-- EXPERIENCE EXPANSION -->
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#inhanguk-info">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="inhanguk-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          inhanguk
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- EXPERIENCE EXPANSION -->
+
 
   <!-- Optional JavaScript -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- <script> AOS.init();</script> -->
-  <!-- stop it for some time; -->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -54,6 +54,10 @@ html, body, h1, h2, h3, h5, h6, p{
 .text-yellow{
   color: #fffd66;
 }
+
+.background-yellow{
+  background-color: #fffd66;
+}
 .text-gradient{
   background: #8c11ff;  /* fallback for old browsers */
   -webkit-background-clip: text;
@@ -144,7 +148,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-.education-card{
+.background-purple{
   background-image: linear-gradient(to right, #9000ff, #4848f6);
 }
 .btn-purple{
