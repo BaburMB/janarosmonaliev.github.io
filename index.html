@@ -137,13 +137,14 @@
   <!-- END OF EDICATION -->
 
   <!-- LANGUAGES -->
-  <div class="container-fluid box-space px-0" style="max-width: 2560px">
-    <div class="container">
-      <h2 class="text-black display-4 text-bold">Languages</h2>
-    </div>
-    <div class="mt-5" style="background-color: #ebebeb;">
-      <div class="row px-sm-1 px-md-3 py-5">
-        <div class="col-lg text-center">
+  <div class="container-fluid box-space px-0">
+      <div class="container">
+        <h2 class="text-black display-4 text-bold">Languages</h2>
+      </div>
+      <div class="container-fluid px-0" style="background-color: #ebebeb;">
+    <div class="mt-5 container-fluid" style="max-width: 2560px;">
+      <div class="row px-sm-1 px-md-3 pt-5">
+        <div class="col-lg text-center pb-5">
             <div class="card box-rounded bg-white border-white">
                 <div class="card-body text-left mt-1">
                   <h3 class="text-bold text-black">Russian <span><img class="img-fluid float-right" src="images/russia-flag.png"></span></h3>
@@ -155,7 +156,7 @@
                   </div>
                 </div>
         </div>
-        <div class="col-lg text-center">
+        <div class="col-lg text-center pb-5">
             <div class="card box-rounded bg-white border-white">
                 <div class="card-body text-left mt-1">
                   <h3 class="text-bold text-black">English <span><img class="img-fluid float-right" src="images/us-flag.png"></span></h3>
@@ -167,7 +168,7 @@
                   </div>
                 </div>
         </div>
-        <div class="col-lg text-center">
+        <div class="col-lg text-center pb-5">
             <div class="card box-rounded bg-white border-white">
                 <div class="card-body text-left mt-1">
                   <h3 class="text-bold text-black">Kyrgyz <span><img class="img-fluid float-right" src="images/kyrgyzstan-icon.png"></span></h3>
@@ -179,7 +180,7 @@
                   </div>
                 </div>
         </div>
-        <div class="col-lg text-center">
+        <div class="col-lg text-center pb-5">
             <div class="card box-rounded bg-white border-white">
                 <div class="card-body text-left mt-1">
                   <h3 class="text-bold text-black">Turkish <span><img class="img-fluid float-right" src="images/turkey-flag.png"></span></h3>
@@ -191,7 +192,7 @@
                   </div>
                 </div>
         </div>
-        <div class="col-lg text-center">
+        <div class="col-lg text-center pb-5">
             <div class="card box-rounded bg-white border-white">
                 <div class="card-body text-left mt-1">
                   <h3 class="text-bold text-black">Korean <span><img class="img-fluid float-right" src="images/korea-flag.png"></span></h3>
@@ -254,7 +255,7 @@
         <div class="card-arvizon text-center ">
           <h2 class="text-black text-bold">Internship at Arvizon Ltd.</h2>
           <h4 class="text-purple text-semibold">UI & UX Designer</h4>
-          <a href=""> <span class="card-link"></span> </a>
+          <a data-toggle="modal" data-target="#inhanguk-info"> <span class="card-link"></span> </a>
           <!-- put link here -->
         </div>
       </div>
@@ -273,27 +274,26 @@
   <!-- EXPERIENCE EXPANSION -->
 
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#inhanguk-info">
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inhanguk-info">
     Launch demo modal
-  </button>
+  </button> -->
 
   <!-- Modal -->
-  <div class="modal fade" id="inhanguk-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+  <div class="modal fade px-md-5 px-1" id="inhanguk-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal-dialog m-0 modal-dialog-centered" role="document" style="width: 100%; max-width: 2560px;">
+      <div class="modal-content background-black box-rounded text-white">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title pl-md-2" id="exampleModalLongTitle">Internship at Arvizon Ltd.</h5>
+          <button type="button" class="close text-white float-top pt-1" data-dismiss="modal" aria-label="Close" style="font-size:40px;">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          inhanguk
+          <h1 class="display-5"> Hey there! There is still some work going on here! Check back later : )</h1>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal-footer border-top-0">
+          <button type="button" class="btn btn-outline-light btn-lg mx-auto px-5" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

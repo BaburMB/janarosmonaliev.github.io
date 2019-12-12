@@ -14,14 +14,9 @@ html, body, h1, h2, h3, h5, h6, p{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-.box-item{
-  height: 500px;
-}
 .box-space{
   margin-top: 100px;
   margin-bottom: 100px;
-
 }
 /* Custom text CSS */
 .text-bold{
@@ -42,21 +37,20 @@ html, body, h1, h2, h3, h5, h6, p{
 .text-black{
   color: #000000;
 }
-.color-white{
-  color: white;
-}
-.color-green{
-  background-color: #82c31b;
-}
 .text-shadow{
   text-shadow: 0px 0px 100px rgba(82, 82, 82, 0.1);
 }
 .text-yellow{
   color: #fffd66;
 }
-
+.background-purple{
+  background-image: linear-gradient(to right, #9000ff, #4848f6);
+}
 .background-yellow{
   background-color: #fffd66;
+}
+.background-black{
+  background-color: #202020;
 }
 .text-gradient{
   background: #8c11ff;  /* fallback for old browsers */
@@ -70,33 +64,9 @@ html, body, h1, h2, h3, h5, h6, p{
 .box-rounded{
   border-radius: 20px;
 }
-.background-white{
-  background-color: #FFFFFF;
-}
 .profile{
   margin-top: 5em;
 }
-#university-text{
-  background: #ff3c3c;  /* fallback for old browsers */
-  
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.java{
-  background: #FFFFFF; /* fallback for old browsers */
-  /* box-shadow: 0px 0px 10px #5de1ff; */
-}
-.python{
-  background: #FFFFFF;  /* fallback for old browsers */                
-}
-.javascript{
-  background: #FFFFFF;  /*fallback for old browsers */
-}
-.html{
-  background: #FFFFFF;  /* fallback for old browsers */
-}
-
 .card-inhanguk{
 height: 550px;
 margin: 0, 0, 10px, 10px;
@@ -106,7 +76,6 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
-
 .card-link{
   position: absolute;
   width: 100%;
@@ -115,7 +84,6 @@ background-size: cover;
   left: 0;
   z-index: 1;
 }
-
 .card-fluence{
 height: 550px;
 margin: 0, 0, 10px, 10px;
@@ -127,7 +95,6 @@ background-repeat: no-repeat;
 background-size: contain;
 background-color: #FFFFFF;
 }
-
 .card-arvizon{
 height: 550px;
 margin: 0, 0, 10px, 10px;
@@ -137,7 +104,6 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
-
 .card-art{
 height: 550px;
 margin: 0, 0, 10px, 10px;
@@ -146,10 +112,6 @@ background-image: url(/images/art-card.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-}
-
-.background-purple{
-  background-image: linear-gradient(to right, #9000ff, #4848f6);
 }
 .btn-purple{
   background-image: linear-gradient(to right, #9000ff, #4848f6);
@@ -160,7 +122,6 @@ background-size: cover;
   color: rgb(230, 230, 230);
   background-image: linear-gradient(to right, #5d00a5, #2c2c94);
 }
-
 @media (max-width: 768px) {
 .card-fluence{
   background-image: url(/images/fluence-card-sm.png);
@@ -169,7 +130,6 @@ background-size: cover;
   background-size: contain;
 }
 }
-
 @media (max-width: 1200px) {
   legend {
     font-size: calc(1.275rem + 0.3vw);
