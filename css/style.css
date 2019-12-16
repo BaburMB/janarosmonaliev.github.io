@@ -55,6 +55,9 @@ html, body, h1, h2, h3, h5, h6, p{
 .bg-pattern{
   background-image: url("/images/pattern.png");
 }
+.bg-pattern-dark{
+  background-image: url('/images/pattern-dark.png');
+}
 .text-gradient{
   background: #8c11ff;  /* fallback for old browsers */
   -webkit-background-clip: text;
