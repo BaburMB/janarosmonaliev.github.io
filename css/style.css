@@ -73,23 +73,37 @@ html, body, h1, h2, h3, h5, h6, p{
 .profile{
   margin-top: 5em;
 }
+
 .card-inhanguk{
 height: 550px;
 margin: 0, 0, 10px, 10px;
 padding-top: 40px;
 background-image: url(/images/inhanguk-card.png);
+position: relative;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+transition: all 0.5s ease-in-out;
+position: relative;
+
 }
+.card-inhanguk:hover{
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.025);
+  z-index: 3;
+}
+
 .card-link{
+  margin: 0, 0, 10px, 10px;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 4;
 }
+
+
 .card-fluence{
 height: 550px;
 margin: 0, 0, 10px, 10px;
@@ -100,7 +114,16 @@ background-position-x: 50%;
 background-repeat: no-repeat;
 background-size: contain;
 background-color: #FFFFFF;
+transition: all 0.5s ease-in-out;
+position: relative;
+
 }
+.card-fluence:hover{
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.025);
+  z-index: 3;
+}
+
 .card-arvizon{
 height: 550px;
 margin: 0, 0, 10px, 10px;
@@ -109,6 +132,13 @@ background-image: url(/images/arvizon-card.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+transition: all 0.5s ease-in-out;
+position: relative;
+}
+.card-arvizon:hover{
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.025);
+  z-index: 3;
 }
 .card-art{
 height: 550px;
@@ -118,6 +148,13 @@ background-image: url(/images/art-card.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+transition: all 0.5s ease-in-out;
+position: relative;
+}
+.card-art:hover{
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.025);
+  z-index: 3;
 }
 .btn-purple{
   background-image: linear-gradient(to right, #9000ff, #4848f6);
