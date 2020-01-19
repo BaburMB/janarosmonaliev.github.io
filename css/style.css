@@ -73,6 +73,19 @@ html, body, h1, h2, h3, h5, h6, p{
 .profile{
   margin-top: 5em;
 }
+.skill-tab{
+  transition: 0.1s ease-in-out;
+}
+.skill-tab:hover{
+  transform: scale(1.04);
+}
+.language-tab{
+  transition: 0.1s ease-in-out;
+}
+.language-tab:hover{
+  transform: scale(1.04);
+}
+
 
 .card-inhanguk{
 height: 550px;
@@ -83,7 +96,7 @@ position: relative;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-transition: all 0.5s ease-in-out;
+transition: all 0.2s ease-in-out;
 position: relative;
 
 }
@@ -114,7 +127,7 @@ background-position-x: 50%;
 background-repeat: no-repeat;
 background-size: contain;
 background-color: #FFFFFF;
-transition: all 0.5s ease-in-out;
+transition: all 0.2s ease-in-out;
 position: relative;
 
 }
@@ -132,7 +145,7 @@ background-image: url(/images/arvizon-card.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-transition: all 0.5s ease-in-out;
+transition: all 0.2s ease-in-out;
 position: relative;
 }
 .card-arvizon:hover{
@@ -148,7 +161,7 @@ background-image: url(/images/art-card.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-transition: all 0.5s ease-in-out;
+transition: all 0.2s ease-in-out;
 position: relative;
 }
 .card-art:hover{
